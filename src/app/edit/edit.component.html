@@ -1,0 +1,11 @@
+<main class="form-main">
+    <form #inputInfo = "ngForm" (ngSubmit)="formSubmission(inputInfo)" class="form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" [ngModel] = "userToEdit.name">
+        <label for="contact">Contact</label>
+        <input type="text" name="contact" id="contact" [ngModel] = "userToEdit.contact">
+        <label for="bio">Name</label>
+        <textarea type="text" name="bio" id="bio" rows="10" cols="30" [ngModel] = "userToEdit.bio"></textarea>
+        <button class="button">Update</button>
+    </form>
+</main>
